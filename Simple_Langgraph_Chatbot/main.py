@@ -11,7 +11,6 @@ from IPython.display import Image, display
 # Set up the environment variables
 load_dotenv()
 groq_api_key = os.getenv("groq")
-langsmith = os.getenv("langsmith")
 
 #Set up the LLM
 llm = ChatGroq(groq_api_key=groq_api_key, model_name="gemma2-9b-it")
