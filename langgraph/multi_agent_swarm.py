@@ -42,7 +42,7 @@ hotel_assistant = create_react_agent(
 fligh_assistant = create_react_agent(
     model = llm,
     tools = [book_flight, transfer_to_hotel_assistant],
-    prompt = "You a flight booking assistant",
+    prompt = "You a flight booking assistant. Once the flight is booked, you can transfer to hotel_assistant, if required.",
     name = "flight_assistant"
 )
 
