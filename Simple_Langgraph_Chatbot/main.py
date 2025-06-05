@@ -7,13 +7,10 @@ from langgraph.graph import StateGraph, START, END
 from langgraph.graph.message import add_messages
 from IPython.display import Image, display
 
-
-# Set up the environment variables
 load_dotenv()
-groq_api_key = os.getenv("groq")
 
 #Set up the LLM
-llm = ChatGroq(groq_api_key=groq_api_key, model_name="gemma2-9b-it")
+llm = ChatGroq(model_name="gemma2-9b-it")
 
 
 class State(TypedDict):
