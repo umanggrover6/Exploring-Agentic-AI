@@ -6,12 +6,9 @@ from langgraph_supervisor import create_supervisor
 from tools import add, multiply, web_search
 
 load_dotenv()
-groq_api_key = os.getenv("groq")
-mistra_api_key = os.getenv("mistral")
 
 #Set up the LLM
-llm = ChatGroq(groq_api_key=groq_api_key, 
-               model_name="Llama3-8b-8192")
+llm = ChatGroq(model_name="Llama3-8b-8192")
 
 
 #Agents
