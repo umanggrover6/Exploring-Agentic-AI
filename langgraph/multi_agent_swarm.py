@@ -6,9 +6,8 @@ from langgraph_swarm import create_swarm, create_handoff_tool
 
 # Set up environmemt and LLM
 load_dotenv()
-groq_api_key = os.getenv("groq")
-llm = ChatGroq(groq_api_key=groq_api_key, 
-               model_name="Llama3-8b-8192")
+
+llm = ChatGroq(model_name="Llama3-8b-8192")
 
 # Tools
 def book_hotel(hotel_name: str):
