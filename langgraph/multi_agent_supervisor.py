@@ -6,9 +6,8 @@ from langgraph_supervisor import create_supervisor
 
 # Set up environmemt and LLM
 load_dotenv()
-groq_api_key = os.getenv("groq")
-llm = ChatGroq(groq_api_key=groq_api_key, 
-               model_name="Llama3-8b-8192")
+
+llm = ChatGroq(model_name="Llama3-8b-8192")
 
 
 # Tools
